@@ -1,0 +1,12 @@
+Question : https://www.hackerearth.com/practice/basic-programming/input-output/basics-of-input-output/practice-problems/algorithm/ascii-value/
+Solution :
+#include <iostream>
+using namespace std;
+
+int main()
+ {
+   char c;
+   cin>>c;
+   cout<<(int)c;
+   return 0;
+ }
