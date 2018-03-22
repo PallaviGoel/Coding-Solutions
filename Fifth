@@ -1,0 +1,29 @@
+Question : https://www.hackerearth.com/practice/basic-programming/input-output/basics-of-input-output/practice-problems/algorithm/modify-the-string/
+Solution 5:
+
+
+#include <iostream>
+using namespace std;
+int main()
+ {
+      char ch[100];
+      int i;
+      cin>>ch;
+      char c;
+       while(ch[i])
+       {
+        c=ch[i];
+         if(isupper(c))
+          {
+            c=tolower(c);
+            cout<<c;
+           }
+          else
+           {
+            c=toupper(c);
+            cout<<c;
+           }
+        i++;
+       }
+   return 0;
+ }
