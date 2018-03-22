@@ -1,0 +1,23 @@
+Question 2 :https://www.hackerearth.com/practice/basic-programming/input-output/basics-of-input-output/practice-problems/algorithm/play-with-numbers-2/
+
+Solution :
+#include <iostream>
+using namespace std;
+ 
+int main()
+{
+   long long int i,n,q,*a,l,r,*s;
+    cin>>n>>q;
+    a=new long long int[n];
+s=new long long int[n];
+    for(i=0;i<n;i++) {
+       cin>>a[i];
+       s[i]= i==0?a[0]:s[i-1]+a[i];
+    }
+   while(q--){
+        cin>>l>>r;
+        cout<<(s[r-1]-s[l-1]+a[l-1])/(r-l+1)<<endl;
+    }
+   return 0;
+}
+
